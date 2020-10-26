@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<client-config xmlns="https://www.cc.cec/cas/schemas/client-config/ecas/">
+    <configurationId>eu.europa.ec.digit.eacpdm</configurationId>
+
+    <ecasBaseUrl>https://webgate.ec.europa.eu</ecasBaseUrl>
+    <validateUrl>/cas/laxValidate</validateUrl>
+
+    <serverName>localhost:8080</serverName>
+    <serverContextPath>/mywebapp</serverContextPath>
+
+    <assuranceLevel>LOW</assuranceLevel>
+    <requestingUserDetails>true</requestingUserDetails>
+    <applicationServer>tomcat</applicationServer>
+    <serverProtocol>http</serverProtocol>
+    <serverPort>80</serverPort>
+    <serverSSLPort>443</serverSSLPort>
+    <acceptStrengths>
+        <strength>PASSWORD</strength>
+        <strength>PASSWORD_SMS</strength>
+        <strength>PASSWORD_TOKEN</strength>
+        <strength>PASSWORD_TOKEN_CRAM</strength>
+        <strength>PASSWORD_SOFTWARE_TOKEN</strength>
+        <strength>PASSWORD_MOBILE_APP</strength>
+        <strength>CLIENT_CERT</strength>
+    </acceptStrengths>
+
+    <redirectionInterceptors>
+        <redirectionInterceptor>eu.cec.digit.ecas.client.http.robot.DefaultRobotInterceptor</redirectionInterceptor>
+        <redirectionInterceptor>eu.cec.digit.ecas.client.http.ajax.UnauthorizedAjaxRedirectionInterceptor</redirectionInterceptor>
+        <redirectionInterceptor>eu.cec.digit.ecas.client.http.ajax.JsonAjaxRedirectionInterceptor</redirectionInterceptor>
+    </redirectionInterceptors>
+
+    <httpRedirector>eu.cec.digit.ecas.client.http.ajax.UnauthorizedGatewayAjaxHttpRedirector</httpRedirector>
+
+</client-config>

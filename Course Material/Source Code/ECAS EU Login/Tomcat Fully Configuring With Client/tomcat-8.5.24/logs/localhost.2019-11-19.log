@@ -1,0 +1,6 @@
+19-Nov-2019 12:24:03.464 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+19-Nov-2019 12:24:03.578 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+19-Nov-2019 12:24:05.685 SEVERE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.handleOmittedMethods For security constraints with URL pattern [/*] the HTTP methods [OPTIONS] are uncovered.
+19-Nov-2019 12:24:05.694 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+19-Nov-2019 13:41:51.037 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+19-Nov-2019 13:41:51.040 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

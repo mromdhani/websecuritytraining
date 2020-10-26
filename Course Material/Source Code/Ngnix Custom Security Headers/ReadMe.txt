@@ -1,0 +1,1 @@
+Just copy the configuration in the bottom of nginx.conf file

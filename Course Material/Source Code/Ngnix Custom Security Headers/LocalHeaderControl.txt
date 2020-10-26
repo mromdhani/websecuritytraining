@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy"
+      content="script-src 'self' code.jquery.com 'unsafe-inline';">
+
+   
+</head>
+
+<body>
+<h1> Hello from JRC ...</h1>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+$("<p> Added by jQuery </p>").appendTo ("body");
+</script>
+
+
+</body>
+
+</html>
